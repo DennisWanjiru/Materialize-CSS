@@ -1,5 +1,14 @@
 @import "../node_modules/materialize-css/sass/materialize.scss";
+.nav-wrapper {
+    margin: 0 30px;
+}
 
-.myRed {
-    @extend .red, .lighten-2, .white-text;
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 0;
+    justify-content: space-between;
+    .card {
+        flex-basis: 47%;
+    }
 }
