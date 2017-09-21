@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Components Continuing</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed z-depth-3">
+            <nav class="blue">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">LOGO</a>
+                    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="active"><a href="#">item1</a></li>
+                        <li><a href="#">item2</a></li>
+                        <li><a href="#">item3</a></li>
+                        <!-- Dropdown Trigger -->
+                        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="#!" class="waves-effect waves-light btn btn-large green">Download<i class="material-icons right">file_download</i></a></li>
+                    </ul>
+
+                    <!-- DROPDOWN -->
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="#!">one</a></li>
+                        <li><a href="#!">two</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!">three</a></li>
+                    </ul>
+
+                    <ul class="side-nav" id="mobile-menu">
+                        <li><a href="#">item1</a></li>
+                        <li><a href="#">item2</a></li>
+                        <li><a href="#">item3</a></li>
+                        <li><a href="#">item4</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- PAGINATION -->
+            <div class="row">
+                <ul class="pagination">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="#!">5</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+
+            <!-- preloaders -->
+            <div class="preloader-wrapper big active">
+                <!-- spinner-blue -->
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <!-- spinner-red -->
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <!-- spinner-yellow -->
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <!-- spinner-greem -->
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script>
+        $(".dropdown-button").dropdown({
+            hover: true
+        });
+
+        $(".button-collapse").sideNav();
+    </script>
+</body>
+
+</html>
