@@ -6846,4 +6846,11 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   #cards .card {
     flex-basis: 47%; }
 
+.parallax2 {
+  height: 350px;
+  opacity: 0.6; }
+
+.navbar-fixed {
+  z-index: 999 !important; }
+
 /*# sourceMappingURL=style.css.map */
